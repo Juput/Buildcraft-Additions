@@ -6,7 +6,7 @@ import buildcraft.BuildCraftTransport;
 import buildcraft.api.recipes.BuildcraftRecipes;
 import buildcraft.core.proxy.CoreProxy;
 import buildcraft.core.triggers.BCTrigger;
-import buildcraftAdditions.Variables.DusterRecepies;
+import buildcraftAdditions.Variables.DusterRecipes;
 import buildcraftAdditions.blocks.*;
 import buildcraftAdditions.client.gui.GuiHandler;
 import buildcraftAdditions.core.Configuration;
@@ -196,9 +196,9 @@ public class BuildcraftAdditions {
         BuildcraftRecipes.integrationTable.addRecipe(new UpgradeRecepieDiamondStick());
         BuildcraftRecipes.integrationTable.addRecipe(new UpgradeRecepieEmeraldStick());
 
-        DusterRecepies.addDusterRecepie(new ItemStack(Blocks.redstone_ore), new ItemStack(Items.redstone, 6));
-        DusterRecepies.addDusterRecepie(new ItemStack(Blocks.coal_ore), new ItemStack(Items.coal, 6));
-        DusterRecepies.addDusterRecepie(new ItemStack(Blocks.lapis_ore), new ItemStack(Items.dye, 6, 4));
+        DusterRecipes.addDusterRecipe(new ItemStack(Blocks.redstone_ore), new ItemStack[]{new ItemStack(Items.redstone, 6)}, new double[]{1});
+        DusterRecipes.addDusterRecipe(new ItemStack(Blocks.coal_ore), new ItemStack[]{new ItemStack(Items.coal, 6)}, new double[]{1});
+        DusterRecipes.addDusterRecipe(new ItemStack(Blocks.lapis_ore), new ItemStack[]{new ItemStack(Items.dye, 6, 4)}, new double[]{1});
     }
 
     @Mod.EventHandler
@@ -269,11 +269,11 @@ public class BuildcraftAdditions {
         dust = new ItemStack(itemDust);
         dust.stackSize = 2;
         for (ItemStack stack : list)
-            DusterRecepies.addDusterRecepie(stack, dust);
+            DusterRecipes.addDusterRecipe(stack, new ItemStack[]{dust}, new double[]{1});
         list = OreDictionary.getOres("ingot" + metal);
         dust.stackSize = 1;
         for (ItemStack stack : list)
-            DusterRecepies.addDusterRecepie(stack, dust);
+            DusterRecipes.addDusterRecipe(stack, new ItemStack[]{dust}, new double[]{1});
     }
 
 
