@@ -1,9 +1,12 @@
 package buildcraftAdditions.Variables;
 
-import net.minecraft.item.Item;
+import buildcraftAdditions.core.Logger;
 import net.minecraft.item.ItemStack;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Copyright (c) 2014, AEnterprise
@@ -12,18 +15,62 @@ import java.util.ArrayList;
  * License 1.0, or MMPL. Please check the contents of the license located in
  * http://buildcraftadditions.wordpress.com/wiki/licensing-stuff/
  */
-public class DusterRecepies {
-    public static ArrayList<Item> dusterInput = new ArrayList<Item>(20);
-    public static ArrayList<ItemStack> dusterOutput = new ArrayList<ItemStack>(20);
+public class DusterRecipes {
 
-    public static void addDusterRecepie(ItemStack input, ItemStack output){
-        dusterInput.add(input.getItem());
-        dusterOutput.add(output.copy());
+    private static HashMap<ItemStack, HashMap<ItemStack, Double>> recipes = new HashMap<ItemStack, HashMap<ItemStack, Double>>();
+
+    public static void addDusterRecipe(ItemStack input, ItemStack[] outputs, double[] chances) {
+
+        input = input.copy().splitStack(1);
+
+        if (outputs.length != chances.length || recipes.keySet().contains(input)) {
+            Logger.error("Unable to add duster recipe (" + input.toString() + " -> " + Arrays.asList(outputs).toString() + ")");
+            return;
+        }
+
+        HashMap<ItemStack, Double> outputPairs = new HashMap<ItemStack, Double>();
+
+        for (int i = 0; i < outputs.length; i++) {
+            ItemStack output = outputs[i].copy();
+            if (!outputPairs.containsKey(output))
+                outputPairs.put(output.copy(), chances[i]);
+            else {
+                Logger.error("Unable to add duster recipe (" + input.toString() + " -> " + Arrays.asList(outputs).toString() + ")");
+                return;
+            }
+        }
+
+        recipes.put(input.copy(), outputPairs);
+
     }
 
-    public static ItemStack getOutput(ItemStack input){
-         if (dusterInput.contains(input.getItem()))
-            return dusterOutput.get(dusterInput.indexOf(input.getItem()));
-        return null;
+    public static ArrayList<ItemStack> getOutputs(ItemStack input) {
+
+        if (!hasOutput(input))
+            return null;
+
+        ArrayList<ItemStack> outputs = new ArrayList<ItemStack>(1);
+
+        for (Map.Entry<ItemStack, HashMap<ItemStack, Double>> entry : recipes.entrySet()) {
+            if (ItemStack.areItemStacksEqual(input, entry.getKey())) {
+                for (ItemStack output : entry.getValue().keySet()) {
+                    if (entry.getValue().get(output) <= Math.random())
+                        output.stackSize = (int) (output.stackSize * Math.random());
+                    if (output.stackSize > 0)
+                        outputs.add(output);
+                }
+            }
+        }
+        return outputs;
+    }
+
+    public static boolean hasOutput(ItemStack input) {
+
+        for (ItemStack in : recipes.keySet()) {
+            if (ItemStack.areItemStacksEqual(in, input.copy().splitStack(1)))
+                return true;
+        }
+
+        return recipes.containsKey(input.copy().splitStack(1));
     }
 }
