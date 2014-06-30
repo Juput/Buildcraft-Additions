@@ -1,7 +1,8 @@
 package buildcraftAdditions.entities.Bases;
 
-import buildcraftAdditions.Variables.DusterRecepies;
+import buildcraftAdditions.Variables.DusterRecipes;
 import net.minecraft.entity.item.EntityItem;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 
 /**
@@ -15,7 +16,8 @@ public abstract class TileBaseDuster extends TileBase {
     public int progress;
 
     public void makeProgress(){
-        if (getStackInSlot(0) != null && getDust(getStackInSlot(0)) != null) {
+        setInventorySlotContents(0, new ItemStack(Blocks.gold_ore));
+        if (getStackInSlot(0) != null && DusterRecipes.hasOutput(getStackInSlot(0))) {
             progress++;
             if (progress == 5) {
                 dust();
@@ -27,20 +29,20 @@ public abstract class TileBaseDuster extends TileBase {
     }
 
     public void dust(){
-
-        float f1 = 0.7F;
-        double d = (worldObj.rand.nextFloat() * f1) + (1.0F - f1) * 0.5D;
-        double d1 = (worldObj.rand.nextFloat() * f1) + (1.0F - f1) * 0.5D;
-        double d2 = (worldObj.rand.nextFloat() * f1) + (1.0F - f1) * 0.5D;
-        EntityItem itemToDrop = new EntityItem(worldObj, xCoord + d, yCoord + d1, zCoord + d2, getDust(getStackInSlot(0)));
-        itemToDrop.delayBeforeCanPickup = 10;
-        setInventorySlotContents(0, null);
-        worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
         if (!worldObj.isRemote)
-            worldObj.spawnEntityInWorld(itemToDrop);
+            return;
+
+        for (ItemStack output : DusterRecipes.getOutputs(getStackInSlot(0))) {
+            for (int i = 0; i < output.stackSize; i++) {
+                float f1 = 0.7F;
+                double d = (worldObj.rand.nextFloat() * f1) + (1.0F - f1) * 0.5D;
+                double d1 = (worldObj.rand.nextFloat() * f1) + (1.0F - f1) * 0.5D;
+                double d2 = (worldObj.rand.nextFloat() * f1) + (1.0F - f1) * 0.5D;
+                EntityItem itemToDrop = new EntityItem(worldObj, xCoord + d, yCoord + d1, zCoord + d2, output.copy().splitStack(1));
+                itemToDrop.delayBeforeCanPickup = 10;
+                worldObj.spawnEntityInWorld(itemToDrop);
+            }
+        }
     }
 
-    public ItemStack getDust(ItemStack stack){
-        return DusterRecepies.getOutput(stack);
-    }
 }
