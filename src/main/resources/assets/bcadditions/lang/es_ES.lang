@@ -40,74 +40,74 @@ item.dustDiamond.name=Polvo de diamante
 item.grindingWheel.name=Rueda de moler
 item.engineeringDiary.name=Diario de Ingeniería
 
--tooltip.installed=Instalado
--tooltip.deactivated=Desactivado
+tooltip.installed=Instalado
+tooltip.deactivated=Desactivado
 
--gui.progress=Progreso
--gui.fluid=Líquido
--gui.noFluid=Vacío
--gui.fluidStored=Cantidad de líquido
--gui.energyInTool=Energia guardada
--gui.maxEnergy=Energia máxima
+gui.progress=Progreso
+gui.fluid=Líquido
+gui.noFluid=Vacío
+gui.fluidStored=Cantidad de líquido
+gui.energyInTool=Energia guardada
+gui.maxEnergy=Energia máxima
 
--trigger.canisterRequested=Lata requerida
--trigger.hasEmptyCanister=Tiene lata vacía
--trigger.hasFullCanister=Tiene lata llena
--trigger.doneCharging=Acabado de cargar
--trigger.readyToCharge=Preparado para cargar
+trigger.canisterRequested=Lata requerida
+trigger.hasEmptyCanister=Tiene lata vacía
+trigger.hasFullCanister=Tiene lata llena
+trigger.doneCharging=Acabado de cargar
+trigger.readyToCharge=Preparado para cargar
 
--itemGroup.BuildcraftAdditions=Buildcraft Additions
+itemGroup.BuildcraftAdditions=Buildcraft Additions
 
--Eureka=EUREKA!
--eureka.dusterTier0Finished=Empiezas a planear todas tus próximas invenciones pero te das cuenta de que vas a necesitas un montón de recursos. También empiezas a pensar en una forma de hacer eso mas fácil.
--eureka.dusterTier1Finished=Mientras procesas tus minerales, de repente te das cuenta de que hay formas mas eficientes de procesarlos.
--eureka.dusterTier2-1Finished=Después de poder interactuar con inventarios, decides intentar automatizar el procesamiento en sí.
--eureka.dusterTier2-2Finished=Te gusta no tener que saltar encima de la maquina, pero también quieres la habilidad de interactuar con los inventarios. Decides combinar tu sabiduría en una nueva máquina. Seguramente algo con láseres?
--eureka.kineticToolFinished=Mientras creas una nueva herramienta para sustituir la antigua, empiezas a pensar en una herramienta que no se romperá.
--eureka.missingKnowledge=No entiendes como funciona esta maquina (aún) . Intentas usarla, pero debido a tu incompetencia, se rompe en pedazos.
--eureka.missingKnowledgeKineticTool=No entiendes como funciona esta maquina (aún) . Intentas usarla, pero debido a tu incompetencia, se rompe en pedazos.
+Eureka=EUREKA!
+eureka.dusterTier0Finished=Empiezas a planear todas tus próximas invenciones pero te das cuenta de que vas a necesitas un montón de recursos. También empiezas a pensar en una forma de hacer eso mas fácil.
+eureka.dusterTier1Finished=Mientras procesas tus minerales, de repente te das cuenta de que hay formas mas eficientes de procesarlos.
+eureka.dusterTier2-1Finished=Después de poder interactuar con inventarios, decides intentar automatizar el procesamiento en sí.
+eureka.dusterTier2-2Finished=Te gusta no tener que saltar encima de la maquina, pero también quieres la habilidad de interactuar con los inventarios. Decides combinar tu sabiduría en una nueva máquina. Seguramente algo con láseres?
+eureka.kineticToolFinished=Mientras creas una nueva herramienta para sustituir la antigua, empiezas a pensar en una herramienta que no se romperá.
+eureka.missingKnowledge=No entiendes como funciona esta maquina (aún) . Intentas usarla, pero debido a tu incompetencia, se rompe en pedazos.
+eureka.missingKnowledgeKineticTool=No entiendes como funciona esta maquina (aún) . Intentas usarla, pero debido a tu incompetencia, se rompe en pedazos.
 
--engineeringDiary.mainScreen.title=Diario de Ingeniería
--engineeringDiary.mainScreen.description=Este libro es un Diario de tu progreso descubriendo objetos y bloques a través del sistema Eureka. Como un Ingeniero, la experimentación y el testeo es requerido antes de crear una máquina,
+engineeringDiary.mainScreen.title=Diario de Ingeniería
+engineeringDiary.mainScreen.description=Este libro es un Diario de tu progreso descubriendo objetos y bloques a través del sistema Eureka. Como un Ingeniero, la experimentación y el testeo es requerido antes de crear una máquina,
 engineeringDiary.mainScreen.page1=y necesitaras crear y usar maquinas simples para tener un momento Eureka, que te llevara a nuevas creaciones. Diviértete!
 
--engineeringDiary.dusterTier0.title=Sacudidor básico
--engineeringDiary.dusterTier0.description=Puedes usar esta máquina simple para doblar tus minerales.
--engineeringDiary.dusterTier0.page1=No eres nostálgico, pero a veces le llega a todo el mundo. Te acuerdas de los viejos tiempos, cuando uno tenía todos los minerales que siempre quería, solo para construir grandes contracciones de redstone o vías tan grandes
--engineeringDiary.dusterTier0.page2=que cubrían continentes enteros. Buenos tiempos. Aunque después de la llegada de los ingenieros, todo cambio. Todas sus complejas máquinas y herramientas requerían grandes cantidades de minerales, tanto, que a veces secaban la tierra.
--engineeringDiary.dusterTier0.page3=Empiezas a pensar como incrementar la producción de mineral, y creas el sacudidor básico, una maquina simple creada usando piedra y slimes, con piezas de moledora encima.
--engineeringDiary.dusterTier0.page4=Funciona poniendo mineral encima y saltando, algo con lo que no estas entusiasmado, pero mas minerales son mas minerales. Te preguntas como puedes mejorar esta máquina...
--engineeringDiary.dusterTier0.requiredResearch=Ninguno
--engineeringDiary.dusterTier0.howToMakeProgress=Planea futuras máquinas
+engineeringDiary.dusterTier0.title=Sacudidor básico
+engineeringDiary.dusterTier0.description=Puedes usar esta máquina simple para doblar tus minerales.
+engineeringDiary.dusterTier0.page1=No eres nostálgico, pero a veces le llega a todo el mundo. Te acuerdas de los viejos tiempos, cuando uno tenía todos los minerales que siempre quería, solo para construir grandes contracciones de redstone o vías tan grandes
+engineeringDiary.dusterTier0.page2=que cubrían continentes enteros. Buenos tiempos. Aunque después de la llegada de los ingenieros, todo cambio. Todas sus complejas máquinas y herramientas requerían grandes cantidades de minerales, tanto, que a veces secaban la tierra.
+engineeringDiary.dusterTier0.page3=Empiezas a pensar como incrementar la producción de mineral, y creas el sacudidor básico, una maquina simple creada usando piedra y slimes, con piezas de moledora encima.
+engineeringDiary.dusterTier0.page4=Funciona poniendo mineral encima y saltando, algo con lo que no estas entusiasmado, pero mas minerales son mas minerales. Te preguntas como puedes mejorar esta máquina...
+engineeringDiary.dusterTier0.requiredResearch=Ninguno
+engineeringDiary.dusterTier0.howToMakeProgress=Planea futuras máquinas
 
 
--engineeringDiary.dusterTier1.title=Sacudidor semi automático
--engineeringDiary.dusterTier1.description=Este sacudidor mejorado puede interactuar con inventarios.
--engineeringDiary.dusterTier1.page1=Tu primer sacudidor era una ruptura en la escena del procesamiento del mineral. Nunca antes a sido tan fácil a sido conseguir mas mineral. Todo el mundo entendió que saltar y poner manualmente el mineral era un poco rústico, a si que decides
--engineeringDiary.dusterTier1.page2=centrarte en hacer una máquina mejor, empezando con interactuar con inventarios. Experimentando con Tuberías parece tener un efecto, pero los engranajes de piedra son demasiado toscos para el oro, así que los actualizas a un engranaje de hierro.
--engineeringDiary.dusterTier1.page3=Finalmente, tienes el sacudidor semi-automático. Este sacudidor aun necesita que saltes encima, pero al menos los minerales pueden ser insertados por Tolvas y Tuberías, mientras la salida aparece moverse por si solo. Ahora es horade trabajar en ese problema de saltar.
--engineeringDiary.dusterTier1.requiredResearch=Sacudidor básico
--engineeringDiary.dusterTier1.howToMakeProgress=Procesa objetos en el sacudidor básico
+engineeringDiary.dusterTier1.title=Sacudidor semi automático
+engineeringDiary.dusterTier1.description=Este sacudidor mejorado puede interactuar con inventarios.
+engineeringDiary.dusterTier1.page1=Tu primer sacudidor era una ruptura en la escena del procesamiento del mineral. Nunca antes a sido tan fácil a sido conseguir mas mineral. Todo el mundo entendió que saltar y poner manualmente el mineral era un poco rústico, a si que decides
+engineeringDiary.dusterTier1.page2=centrarte en hacer una máquina mejor, empezando con interactuar con inventarios. Experimentando con Tuberías parece tener un efecto, pero los engranajes de piedra son demasiado toscos para el oro, así que los actualizas a un engranaje de hierro.
+engineeringDiary.dusterTier1.page3=Finalmente, tienes el sacudidor semi-automático. Este sacudidor aun necesita que saltes encima, pero al menos los minerales pueden ser insertados por Tolvas y Tuberías, mientras la salida aparece moverse por si solo. Ahora es horade trabajar en ese problema de saltar.
+engineeringDiary.dusterTier1.requiredResearch=Sacudidor básico
+engineeringDiary.dusterTier1.howToMakeProgress=Procesa objetos en el sacudidor básico
 
--engineeringDiary.dusterTier2-1.title=Sacudidor mecánico
--engineeringDiary.dusterTier2-1.description=This ore-doubling machine can receive power
--engineeringDiary.dusterTier2-1.page1=After your initial automation discovery, you try to make the machine grind the ore for you, without success. You decide to take a step back and use the Basic Duster as base for your experiments again,
--engineeringDiary.dusterTier2-1.page2=and you end up creating the Grinding Wheel, an item that could be the key to automating this machine. And it proves very effective once you upgrade the Stone Gears to Iron, it seems to accept power to double the ores.
--engineeringDiary.dusterTier2-1.page3=You finally made the Mechanical Duster! However this machine is another incomplete experiment, since it doesn’t have the inventory managing capabilities of the Semi-Automatic Duster. You need to step it up.
--engineeringDiary.dusterTier2-1.requiredResearch=Semi-automatic Duster
--engineeringDiary.dusterTier2-1.howToMakeProgress=Process items in the Semi-automatic Duster
+engineeringDiary.dusterTier2-1.title=Sacudidor mecánico
+engineeringDiary.dusterTier2-1.description=Esta máquina dobla minerales puede recibir energía
+engineeringDiary.dusterTier2-1.page1=Después del descubrimiento inicial de la automatización, intentas crear una máquina que doble los minerales por ti, sin éxito. decides ir un paso atrás y usar el sacudidor básico como base para tus experimentos otra vez,
+engineeringDiary.dusterTier2-1.page2=y acabas creando la rueda moledora, un objeto que podría ser la llave a la automatización de esta máquina. y parece ser muy eficiente una vez mejorado el engranaje de piedra a hierro, parece que acepta energía para doblar los minerales.
+engineeringDiary.dusterTier2-1.page3=Finalmente has creado el Sacudidor mecánico! Aunque esta máquina es otro experimento incompleto, ya que no tiene las capacidades del inventario del sacudidor semi-automático. Tienes que mejorarla.
+engineeringDiary.dusterTier2-1.requiredResearch=Sacudidor semi-automático
+engineeringDiary.dusterTier2-1.howToMakeProgress=Procesa objetos en la sacudidora semi-automática
 
--engineeringDiary.dusterTier2-2.title=Kinetic Duster
--engineeringDiary.dusterTier2-2.description=The Ultimate Duster (also known as Dustinator 9000)
--engineeringDiary.dusterTier2-2.page1=After many failed Duster versions, you decide you simply can’t mix the Grinding power of the Mechanical Duster and the inventory managing capabilities of the Semi-Automatic Duster, so you decide to step it up
--engineeringDiary.dusterTier2-2.page2=and try another method of doubling the Ore: Lasers. Their precision surely will help in not breaking the internal piping like it happened every time it was hit by an Engine. Fortunately it works,
--engineeringDiary.dusterTier2-2.page3=but this time you have to involve some high-tier materials, including a Diamond Gear. The Kinetic Duster is born. The precision of the Lasers keeps the internal gold circuit intact,
--engineeringDiary.dusterTier2-2.page4=which allows the machine to receive external power (through Lasers) and manage its own inventory. You’re done here.
--engineeringDiary.dusterTier2-2.requiredResearch=Mechanical Duster
--engineeringDiary.dusterTier2-2.howToMakeProgress=Process items in the Mechanical Duster
+engineeringDiary.dusterTier2-2.title=Sacudidor cinético
+engineeringDiary.dusterTier2-2.description=El sacudidor definitivo (también conocido como sacudeitor 9000)
+engineeringDiary.dusterTier2-2.page1=Después de muchas versiones fallidas de sacudidores, decides que simplemente no puedes juntar el poder de moler del sacudidor mecánico y las capacidades de inventario del sacudidor semi-automático, así que decides mejorarlo
+engineeringDiary.dusterTier2-2.page2=y probar otro metodo de doblaje de minerales: Lasers. su precisión seguro que ayudara en no romper las tuberías internas como pasaba cada vez que era golpeado por un motor. Afortunadamente funciona,
+engineeringDiary.dusterTier2-2.page3=pero esta vez tienes que involucrar algunos materials de gama alta, incluyendo un engranaje de diamante. El sacudidor cinético a nacido. La precision de los láseres mantiene el circuito de oro integrado intacto,
+engineeringDiary.dusterTier2-2.page4=que permite la máquina recibir energy externa (mediante lasers) y manejar su propio inventario. Ya as acabado aquí.
+engineeringDiary.dusterTier2-2.requiredResearch=Sacudidor mecánico
+engineeringDiary.dusterTier2-2.howToMakeProgress=Procesa objetos en el sacudidor mecánico
 
-engineeringDiary.kineticTool.title=Kinetic Multi-Tool
-engineeringDiary.kineticTool.description=One tool for all
+engineeringDiary.kineticTool.title=Multi-herramienta cinética
+engineeringDiary.kineticTool.description=Una herramienta para todas
 engineeringDiary.kineticTool.page1=Tools are a fundamental part of our world, you hate the fact that they keep breaking. Machines never seem to break, and you start to wonder why. After a while, you realise why: Redstone and Power.
 engineeringDiary.kineticTool.page2=While tools also recieve a sort of Power (the one that comes from your arm), machines recieve a special, Redstone-tuned power, and that seems to be what makes them last indefinetely.
 engineeringDiary.kineticTool.page3=You decide the best way to make Unbreakable tools is to craft them with the highest quality, Redstone-tuned materials. The core of your tool consists of a Gold Gear (for the best speed) combined
@@ -128,25 +128,25 @@ engineeringDiary.requiredResearch=Required research:
 engineeringDiary.progress=Progreso:
 engineeringDiary.unlocked=DESBLOQUEADO
 
-config.title=Buildcraft Additions configuración
+config.title=Buildcraft Additions (BCA) configuración
 
-updates=Updates
-updates.tooltip=Configure if BCA should check for updates or not
-shouldCheckForUpdates=Check for updates
-shouldCheckForUpdates.tooltip=True = check for updates, false = do not check for updates
-shouldPrintOutChangelog=Print out changelog
-shouldPrintOutChangelog.tooltip=If set to true true you will also see the changelog of the newer version
+updates=Actualizaciones
+updates.tooltip=Configura si BCA debería mirar si hay actualizaciones o no
+shouldCheckForUpdates=Mirar si hay actualizaciones
+shouldCheckForUpdates.tooltip=“True" = Buscar actualizaciones, “false" = no buscar actualizaciones
+shouldPrintOutChangelog=Mostrar la lista de cambios
+shouldPrintOutChangelog.tooltip=Si puesto en “true" también veras la lista de cambios para la nueva versión
 
-BaseModifier=Base Modifier
-BaseModifier.tooltip=Base energy the tools use
-EasyDifficultyModifier=Easy Modifier
-EasyDifficultyModifier.tooltip=The energy consumption is multiplied with this on Easy
-HardDifficultyModifier=Hard Modifier
-HardDifficultyModifier.tooltip=The energy consumption is multiplied with this on Easy
-NormalDifficultyModifier=Normal Modifier
-NormalDifficultyModifier.tooltip=The energy consumption is multiplied with this on Normal
-PeacefullDifficultyModifier=Peacefull Modifier
-PeacefullDifficultyModifier.tooltip=The energy consumption is multiplied with this on Peacefull
+BaseModifier=Modificador basico
+BaseModifier.tooltip=Energia basica que las herramientas usan
+EasyDifficultyModifier=Modificador facil
+EasyDifficultyModifier.tooltip=La consumición de la energía es multiplicada con el modo fácil puesto
+HardDifficultyModifier=Modificador difícil
+HardDifficultyModifier.tooltip=La consumición de la energía es multiplicada con el modo difícil puesto
+NormalDifficultyModifier=Modificador normal
+NormalDifficultyModifier.tooltip=La consumición de la energía es multiplicada con el modo normal puesto
+PeacefullDifficultyModifier=Modificador “peacefull"
+PeacefullDifficultyModifier.tooltip=La consumición de la energía es multiplicada con el modo “peacefull" puesto
 
 Misc=Misc
 shouldRegisterDusts=Registrar polvos
