@@ -88,7 +88,6 @@ engineeringDiary.dusterTier1.page1=Tu primer sacudidor era una ruptura en la esc
 engineeringDiary.dusterTier1.page2=centrarte en hacer una máquina mejor, empezando con interactuar con inventarios. Experimentando con Tuberías parece tener un efecto, pero los engranajes de piedra son demasiado toscos para el oro, así que los actualizas a un engranaje
 engineeringDiary.dusterTier1.page3=de hierro. Finalmente, tienes el sacudidor semi-automático. Este sacudidor aun necesita que saltes encima, pero al menos los minerales pueden ser insertados por Tolvas y Tuberías, mientras la salida parece salir solo.
 engineeringDiary.dusterTier1.page4= Ahora es hora de trabajar en ese problema de saltar.
-engineeringDiary.dusterTier1.page5=Recuerdas de que no puede interactuar directamente con cofres, solo con Tuberías y Tolvas.
 engineeringDiary.dusterTier1.requiredResearch=Sacudidor básico
 engineeringDiary.dusterTier1.howToMakeProgress=Procesa objetos en el sacudidor básico
  
