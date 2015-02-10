@@ -1,5 +1,5 @@
 Added:
-  - multiblock refinery (dissables BC refinery recipe, BC refineries already in the world will produce the same as the multiblock refinery)
+  - multiblock refinery (disables BC refinery recipe, BC refineries already in the world will produce the same as the multiblock refinery)
   - multiblock cooling tower
   - sort-o-tron
   - 3rd tier of KEB
