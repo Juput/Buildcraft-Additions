@@ -6,6 +6,13 @@ tile.blockDusterBasic.name=Sacudidor básico
 tile.blockDusterSemiAutomatic.name=Sacudidor semi-automático
 tile.blockDusterMechanical.name=Sacudidor mecánico
 tile.blockDusterKinetic.name=Sacudidor cinético
+tile.blockCoilLava.name=Bobina de lava
+tile.blockCoilKinetic.name=Bobina cinética
+tile.blockKEBT1.name=Bateria cinética
+tile.blockKEBT2.name=Bateria grande cinética
+tile.blockKEBT3Core.name=Nucleo de bateria cinética avanzada
+tile.blockKEBT3Plating.name=Chapado de bateria cinética avanzada
+tile.blockKEBT3.name=Bateria cinética avanzada
  
 item.ironCanister.name=Lata de hierro
 item.goldCanister.name=Lata de oro
@@ -39,10 +46,16 @@ item.dustSilver.name=Polvo de plata
 item.dustDiamond.name=Polvo de diamante
 item.grindingWheel.name=Rueda de moler
 item.engineeringDiary.name=Diario de Ingeniería
+item.wireIron.name=Cable de Hierro
+item.wireIronUnhardened.name=Cable de Hierro (Inusable)
+item.wireGold.name=Cable de Oro
+item.wireGoldUnhardened.name=Cable de Oro (Inusable)
+item.wireDiamond.name=Cable de Diamante
+item.wireDiamondUnhardened.name=Cable de Diamante (Inusable)
  
 tooltip.installed=Instalado
 tooltip.deactivated=Desactivado
-tooltip.upgradesPossible=Mejores disponibles
+tooltip.upgradesPossible=Mejoras disponibles
  
 gui.progress=Progreso
 gui.fluid=Líquido
@@ -50,8 +63,10 @@ gui.noFluid=Vacío
 gui.fluidStored=Cantidad de líquido
 gui.energyInTool=Energia guardada
 gui.maxEnergy=Energia máxima
+
+gui.nei.dusting=Pulverizando
  
-trigger.canisterRequested=Lata requerida
+trigger.canisterRequested=Lata necesaria
 trigger.hasEmptyCanister=Tiene lata vacía
 trigger.hasFullCanister=Tiene lata llena
 trigger.doneCharging=Acabado de cargar
@@ -72,17 +87,16 @@ engineeringDiary.BCA.title=Buildcraft Additions
 engineeringDiary.BCA.page0=Aquí podras encontrar todos los objetos investigables y su progreso.
  
 engineeringDiary.dusterTier0.title=Sacudidor Básico
-engineeringDiary.dusterTier0.description=Puedes usar esta máquina simple para doblar tus minerales.
+engineeringDiary.dusterTier0.page0=Puedes usar esta máquina simple para doblar tus minerales.
 engineeringDiary.dusterTier0.page1=No eres nostálgico, pero a veces le llega a todo el mundo. Te acuerdas de los viejos tiempos, cuando uno tenía todos los minerales que siempre quería, solo para construir grandes contracciones de redstone o vías tan grandes
 engineeringDiary.dusterTier0.page2=que cubrían continentes enteros. Buenos tiempos. Aunque después de la llegada de los ingenieros, todo cambio. Todas sus complejas máquinas y herramientas requerían grandes cantidades de minerales, tanto, que a veces
 engineeringDiary.dusterTier0.page3=secaban la tierra. Empiezas a pensar como incrementar la producción de mineral, y creas el sacudidor básico, una maquina simple creada usando piedra y slimes, con piezas de moledora encima.
 engineeringDiary.dusterTier0.page4=Funciona poniendo mineral encima y saltando, algo con lo que no estas entusiasmado, pero más minerales son más minerales. Te preguntas como puedes mejorar esta máquina...
-engineeringDiary.dusterTier0.requiredResearch=Ninguno
 engineeringDiary.dusterTier0.howToMakeProgress=Planea futuras máquinas
  
  
 engineeringDiary.dusterTier1.title=Sacudidor Semi Automático
-engineeringDiary.dusterTier1.description=Este sacudidor mejorado puede interactuar con inventarios.
+engineeringDiary.dusterTier1.page0=Este sacudidor mejorado puede interactuar con inventarios.
 engineeringDiary.dusterTier1.page1=Tu primer sacudidor era una ruptura en la escena del procesamiento del mineral. Nunca antes a sido tan fácil conseguir mas mineral. Todo el mundo entendió que saltar y poner manualmente el mineral era un poco rústico, a si que decides
 engineeringDiary.dusterTier1.page2=centrarte en hacer una máquina mejor, empezando con interactuar con inventarios. Experimentando con Tuberías parece tener un efecto, pero los engranajes de piedra son demasiado toscos para el oro, así que los actualizas a un engranaje
 engineeringDiary.dusterTier1.page3=de hierro. Finalmente, tienes el sacudidor semi-automático. Este sacudidor aun necesita que saltes encima, pero al menos los minerales pueden ser insertados por Tolvas y Tuberías, mientras la salida parece salir solo.
@@ -92,7 +106,7 @@ engineeringDiary.dusterTier1.requiredResearch=Sacudidor básico
 engineeringDiary.dusterTier1.howToMakeProgress=Procesa objetos en el sacudidor básico
  
 engineeringDiary.dusterTier2-1.title=Sacudidor Mecánico
-engineeringDiary.dusterTier2-1.description=Usa energia para procesar.
+engineeringDiary.dusterTier2-1.page0=Usa energia para procesar.
 engineeringDiary.dusterTier2-1.page1=Después del descubrimiento inicial de la automatización, intentas crear una máquina que doble los minerales por ti, sin éxito. decides ir un paso atrás y usar el sacudidor básico como base para tus experimentos otra vez,
 engineeringDiary.dusterTier2-1.page2=y acabas creando la rueda moledora, un objeto que podría ser la llave a la automatización de esta máquina. y parece ser muy eficiente una vez mejorado el engranaje de piedra a hierro, parece que acepta energía para doblar los minerales.
 engineeringDiary.dusterTier2-1.page3=Finalmente has creado el Sacudidor mecánico! Aunque esta máquina es otro experimento incompleto, ya que no tiene las capacidades del inventario del sacudidor semi-automático. Tienes que mejorarla.
@@ -100,7 +114,7 @@ engineeringDiary.dusterTier2-1.requiredResearch=Sacudidor semi-automático
 engineeringDiary.dusterTier2-1.howToMakeProgress=Procesa objetos en la sacudidora semi-automática
  
 engineeringDiary.dusterTier2-2.title=Sacudidor Cinético
-engineeringDiary.dusterTier2-2.description=El sacudidor definitivo (también conocido como sacudineitor 9000)
+engineeringDiary.dusterTier2-2.page0=El sacudidor definitivo (también conocido como sacudineitor 9000)
 engineeringDiary.dusterTier2-2.page1=Después de muchas versiones fallidas de sacudidores, decides que simplemente no puedes juntar el poder de moler del sacudidor mecánico y las capacidades de inventario del sacudidor semi-automático, así que decides mejorarlo
 engineeringDiary.dusterTier2-2.page2=y probar otro metodo de doblaje de minerales: Lasers. su precisión seguro que ayudara en no romper las tuberías internas como pasaba cada vez que era golpeado por un motor. Afortunadamente funciona,
 engineeringDiary.dusterTier2-2.page3=pero esta vez tienes que involucrar algunos materials de gama alta, incluyendo un engranaje de diamante. El sacudidor cinético a nacido. La precision de los láseres mantiene el circuito de oro integrado intacto,
@@ -109,7 +123,7 @@ engineeringDiary.dusterTier2-2.requiredResearch=Sacudidor mecánico
 engineeringDiary.dusterTier2-2.howToMakeProgress=Procesa objetos en el sacudidor mecánico
  
 engineeringDiary.kineticTool.title=Multi Herramienta Cinética
-engineeringDiary.kineticTool.description=Una herramienta para todas
+engineeringDiary.kineticTool.page0=Una herramienta para todas
 engineeringDiary.kineticTool.page1=Las herramientas son una parte fundamental en nuestro mundo, odias que se sigan rompiendo. Las máquinas no parecen romperse nunca, y empiezas a pensar porque. Después de un tiempo, te das cuenta del porque: Redstone y energía.
 engineeringDiary.kineticTool.page2=Mientras las herramientas también reciben una forma de energia (la que viene de tu brazo), máquinas reciben una especial, energia redstoniana, y eso parece hacer que duren para siempre.
 engineeringDiary.kineticTool.page3=Decides que la mejor forma de craftear estas herramientas es con materiales de gama alta,materiales redstonianos. El nucleo de tu herramienta consiste de un engranaje de oro (para la mayor velocidad) combinado
@@ -124,8 +138,68 @@ engineeringDiary.kineticTool.page11=2 en 1! Esto aun no cubre todas tus posibles
 engineeringDiary.kineticTool.page12=Aunque la herramienta tenga 3 mejoras, te preguntas si puedes añadir una cuarta. No hay mas minerals naturales para crear un nuevo palo, pero un dia de encuentras una Planta de energia (aldea), y dentro  
 engineeringDiary.kineticTool.page13=te encuentras a un Ingeniero aldeano! Parece ser que este Aldeano a experimentado con ideas muy similares a las tuyas en el pasado, y aparenta llevar consigo unos Palos de Esmeralda! Vuelves corriendo a casa y combinas el palo con un
 engineeringDiary.kineticTool.page14=Vuelves corriendo a casa y combinas el palo con un Chip de Diamante en tu herramienta. Finalmente, tienes las cuatro mejoras en tu herramienta!
-engineeringDiary.kineticTool.requiredResearch=Ninguno
 engineeringDiary.kineticTool.howToMakeProgress=Craftea herramientas
+
+engineeringDiary.heatedFurnace.title=Horno Térmico
+engineeringDiary.heatedFurnace.page0=Un nuevo horno que puede ser calentado de varias formas.
+engineeringDiary.heatedFurnace.page1=La piedra no era lo mejor. Ya tenias un monton de hornos, pero comenzaba a ser complicado manegarlos. Simplemente querias algo que consumiera mas carbon de una pasada, pero lo que conseguiste fue algo sorprendente.
+engineeringDiary.heatedFurnace.page2=Si cubrias un horno con lingotes de hierro, te decisite del espacio de carbon. Oops. @ @ Aunque, no te ibas a rendir tan facilmente, y como ya conoces la capacidades de transmision del hierro, estabas convencido
+engineeringDiary.heatedFurnace.page3=de que podrias hacer que algo alimentara tu horno... Decides colocarlo en el mundo, para pensar en algo.
+engineeringDiary.heatedFurnace.howToMakeProgress=Pon el horno en el mundo
+eureka.heatedFurnaceFinished=Despues de colocar tantos hornos en el mundo, piensas en como hacer un horno mas rapido.
+
+engineeringDiary.basicCoil.title=Bobina basica
+engineeringDiary.basicCoil.page0=Esta bobina puede ser usada para calentar el Horno Térmico.
+engineeringDiary.basicCoil.page1=Este era uno dificil. Esto empezo cuando dejaste un par de polvos de hierro al lado de la lava. Estaban lo suficientemente cerca para que la calor le safectara, pero no lo suficientemente cerca para que se fundieran.
+engineeringDiary.basicCoil.page2=La ‘cosa’ era raramente fina y cuando la pusiste cerca de un poco de hierro (mientras estaba caliente), empezo a girar, creando calor y fricción (en pocas cantidades) el lingote de Hierro. You realise this can be used for your new Furnace and
+engineeringDiary.basicCoil.page3=Te das cuenta de que puedes usar esto para tu nuevo horno e intentas adivinar como mejorar el proceso. @ @ al rato, encuentras una forma de refinar el proceso. Usando la mesa de crafteo para combiinar tres piezas de polvo de hierro con
+engineeringDiary.basicCoil.page4=, creas dos piezas de cable de hierro (aun blando), entonces decides ponerlo en un horno para endurecerlo. @ @ El ultimo paso es el complicado. Atas 8 piezas de cable de hierro (ahora endurecido, pero aun moldeable) alrededor de un lingote
+engineeringDiary.basicCoil.page5=de Hierro, y consigues algo parecido a una torre, pero en el tamaño de un bloque. El porque los cables dan vueltas alrededor de la cosa, Decides llamarlo Bobina. @ @ Apartir de aqui es facil. Solo necesitas una forma de calentar la bobina
+engineeringDiary.basicCoil.page6=, y que mejor que no usar el viejo combustible? El caor hace girar la bobina, haciendo contacto con el horno, calentando todo lo que hay dentro. Una sola bobina opera un Horno Térmico a 1/5th de la velocidad de un horno normal,
+engineeringDiary.basicCoil.page7=pero en comparación con la consumición de combustible, dura 5 veces más. Teniendo todos los 6 lados del Horno Térmico envueltos en Bobinas puede hacerlo cocinar más rápido que un Horno normal.
+engineeringDiary.basicCoil.howToMakeProgress=Coloca un Horno Térmico
+eureka.basicCoilFinished=Ya sabias como hacer un Horno Térico, pero ahora que lo has colocado, has dado con una forma de calentarlo
+
+engineeringDiary.lavaCoil.title=Lava Coil
+engineeringDiary.lavaCoil.page0=This Coil can power the Heated Furnace with Lava.
+engineeringDiary.lavaCoil.page1=It was a logical step up. After your initial Coil discoveries with Iron, you decide to do the same with Gold, but you’re surprised to find out that Gold Wires are actually green. Weird. Not only that, but the Coils made from
+engineeringDiary.lavaCoil.page2=them simply don’t take Coal for power. You decide to place Lava in these. Its a long shot, but they’re just as green as Fluid Sealant, so why not? @ @ It works. You really thought it was just going to melt it, but nope.
+engineeringDiary.lavaCoil.page3=These Coils take the already hot fluid Lava and use it to make even more heat. Now we’re talking.
+engineeringDiary.lavaCoil.howToMakeProgress=Place Basic Coils
+eureka.lavaCoilFinished=You observe your basic coils and there heat generation and ask yourself if you can't use lava heating for a new type of coil
+
+engineeringDiary.kineticCoil.title=Kinetic Coil
+engineeringDiary.kineticCoil.page0=This Coil can power the Heated Furnace with Lasers.
+engineeringDiary.kineticCoil.page1=This time you were a bit conservative on using Diamonds to upgrade something, considering just how many you’d need, but then again you were curious about it.
+engineeringDiary.kineticCoil.page2=It was clear from the start where these would be getting their source of power. @ @ Lasers. @ @ Diamonds are great conductors of energy after all and neither Coal nor Lava would ever generate enough heat to
+engineeringDiary.kineticCoil.page3=make Diamonds spin. After this one you’re never having a Furnace wall again.
+engineeringDiary.kineticCoil.howToMakeProgress=Place Lava Coils
+eureka.kineticCoilFinished=Those lava coils are great, but like with all things: there is always something better
+
+engineeringDiary.KEBT1.title=Basic Kinetic Energy Buffer
+engineeringDiary.KEBT1.page0=Basic energy storage in block form
+engineeringDiary.KEBT1.page1=The Kinetic Capsules were quite the advancement when it came to energy, but they weren’t perfect. Despite being able to store energy, you can only transmit it to small devices, making it impossible to use it in large scale operations.
+engineeringDiary.KEBT1.page2=Determined to make it work, you make a simple machine. By stacking three Tier 1 Kinetic Capsules, you think you can store enough energy for something meaningful. To make it work, you place some Golden Kinesis Pipes on the sides,
+engineeringDiary.KEBT1.page3=which ought to be enough to transmit energy to regular machines. Encase it all in some Iron, and you’ve got yourself a Kinetic Energy Buffer! @ @ The block has an interesting GUI, but the most notable thing about it is the fact
+engineeringDiary.KEBT1.page4=that you can use a Wrench to move it!
+engineeringDiary.KEBT1.howToMakeProgress=Craft kinetic capsules
+eureka.KEBT1Finished=Storing energy in batteries is useful but now it's time to also store it in block form
+
+engineeringDiary.KEBT2.title=Large Kinetic Energy Buffer
+engineeringDiary.KEBT2.page0=Larger energy storage
+engineeringDiary.KEBT2.page1=After your initial discovery of the Kinetic Energy Buffer, it’s time to build a better version. But however you try, you just can’t place two Tier 2 Kinetic Capsules on the same block. Instead of giving up, you have a better idea.
+engineeringDiary.KEBT2.page2=By placing just one Capsule per block and filling the gaps with Iron Ingots, you make a block that is capable of connecting with others of the same kind. Adding them one by one, you make a small cubic structure,
+engineeringDiary.KEBT2.page3=which works just like a larger Kinetic Energy Buffer, except you can’t move it.
+engineeringDiary.KEBT2.howToMakeProgress=Place Kinetic Energy Buffers
+eureka.KEBT2Finished=These single blocks hold a lot of power but it's not enough, time to step things up
+
+engineeringDiary.KEBT3.title=Advanced Kinetic Energy Buffer
+engineeringDiary.KEBT3.page0=Even more energy storage
+engineeringDiary.KEBT3.page1= So Tier 2 Kinetic Capsules can’t stack on the same block. But does the same hold true for Tier 3? Nope. Turns out you can fit 3 of them inside a single block! The downside is that you have to use Diamonds to cover the structure,
+engineeringDiary.KEBT3.page2=and only Diamond Kinesis Pipes are able to handle the energy rate inside the block. Not only that, to keep it all in there even more shielding is needed. By combining Gold and Iron (with some Diamond Kinesis Pipes to keep the energy flow going)
+engineeringDiary.KEBT3.page3=you can create the perfect plating for the block. Safe, yet conducting.
+engineeringDiary.KEBT3.howToMakeProgress=Assemble 2 Large Kinetic Energy Buffers
+eureka.KEBT3Finished=Massive power storage just isn't enough
  
 engineeringDiary.requiredResearch=Investigación necesaria:
 engineeringDiary.progress=Progreso:
